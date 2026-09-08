@@ -1,0 +1,5 @@
+# Keep published source and the portable prototype byte-consistent across platforms.
+* text=auto eol=lf
+*.png binary
+*.pptx binary
+*.zip binary

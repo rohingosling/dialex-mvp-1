@@ -1,0 +1,42 @@
+<!doctype html>
+<!--
+    Project: Dialex customer prototype
+    Version: 1.0
+    Date: 2026-09-09
+    Author: Rohin Gosling
+    Description: Demonstration of the proposed solar installer workspace.
+-->
+<html lang="en-AU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#11151c">
+    <meta name="description" content="Dialex solar installer workspace concept. Explore quote enquiries, site visits, agents and usage.">
+    <title>Dialex — Customer workspace</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to workspace</a>
+    <div class="workspace">
+        <aside class="sidebar" aria-label="Workspace navigation">
+            <a class="brand" href="#overview" aria-label="Dialex overview"><span class="brand-mark">d<span></span></span><span>Dialex<span class="brand-caption">VOICE WORKSPACE</span></span></a>
+            <div class="organisation"><span class="organisation-avatar">H</span><div><strong>Harbour Solar</strong><span>Sydney, Australia</span></div></div>
+            <div class="navigation-label">WORKSPACE</div>
+            <nav id="navigation"></nav>
+            <div class="sidebar-bottom">
+                <div class="usage-summary"><div><span>Growth plan</span><strong>46%</strong></div><progress value="684" max="1500" aria-label="684 of 1500 minutes used"></progress><span>684 / 1,500 minutes this month</span><a href="#usage">View usage &amp; plan <span aria-hidden="true">↗</span></a></div>
+                <div class="profile"><span class="profile-avatar">AM</span><div><strong>Alex Morgan</strong><span>Workspace owner</span></div><span class="profile-dot" aria-label="Active workspace"></span></div>
+            </div>
+        </aside>
+        <div class="workspace-main">
+            <header class="topbar"><div><span class="breadcrumb">Workspace</span><span class="breadcrumb-divider">/</span><span id="breadcrumb-current">Overview</span></div><div class="topbar-right"><span class="demo-label"><span></span>Prototype · sample data</span><button class="icon-button" id="help-button" aria-label="About this prototype">?</button></div></header>
+            <main id="main-content" tabindex="-1"></main>
+            <footer class="workspace-footer"><span>Dialex · Product concept</span><span>All activity is simulated</span></footer>
+        </div>
+    </div>
+    <dialog id="information-dialog"><div class="dialog-heading"><h2>Explore Dialex</h2><button class="icon-button" id="close-dialog" aria-label="Close information">×</button></div><p>This prototype shows the proposed solar installer experience. Explore the workspace, configure an agent, run a sample conversation and review call details.</p><p>All businesses, people and activity are fictional. Voice tests are simulated. Calendar bookings are fictional. No calls, messages, appointments or payments are sent.</p><p>Changes stay in this tab until you reload. Prices are illustrative AUD amounts, excluding GST.</p><button class="button primary" id="dismiss-dialog">Back to workspace</button></dialog>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
